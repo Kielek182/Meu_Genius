@@ -1,0 +1,132 @@
+/*border: width style color;*/
+
+:root {
+    --clr-green:   #00A74A;
+	--clr-pink:    #eb30db;
+	--clr-yellow:  #CCA707;
+	--clr-blue:    #094A8F;
+	
+	--clr-light-green:    #13ff7c;
+	--clr-light-red:      #ff4c4c;
+	--clr-light-yellow:   #fed93f;
+	--clr-light-blue:     #1c8cff;
+	
+	--clr-border:		  #333333;
+	--clr-center:  		  #ECE7EE;
+
+	--clr-counter-bg:	  #32050C;
+	--clr-counter-off:	  #430710;
+	--clr-counter-on:	  #DC0D29;
+	
+	--clr-switch: 	      #3193DE;
+	
+	--game-border: 1.5rem solid var(--clr-border);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+}
+
+.genius {           
+    width: 80vh;
+    height: 80vh;    
+    margin-left:30%;    
+    display: grid;
+    grid-template-areas:'botão_left_top botão_right_top' 'botão_left_bottom botão_right_bottom';    
+}
+
+.botão {    
+    width: calc(var(--game-size)/2);
+    height: calc(var(--game-size)/2); 
+    border: var(--game-border);
+}
+
+.opcoes{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.botão_left_top {    
+    background-color: rgba(27, 31, 216, 0.884);
+    border-top-left-radius: 100% ;
+    cursor: pointer;
+}
+
+.botão_right_bottom {    
+    background-color: #eb30db;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+}
+
+.botão_left_bottom {    
+    background-color: rgba(24, 230, 24);
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+}
+
+.botão_right_top {    
+    background-color: rgba(252, 248, 49, 0.993);
+    border-top-right-radius: 100%;
+    cursor: pointer;
+}
+
+.selected {
+    opacity: 0.4;
+}
+/*display contador NÃO CONSIGUI COLOCAR AO LADO DO GENIUS
+.contador{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;        
+    background-color: #32050C;
+    color: #DC0D29;
+    font-family: cursive;iceland
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    width: 5.5rem;
+    border: .3rem solid black;
+}*/
+
+.botão_inicio{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 5rem;
+    box-shadow: 0 .2rem .3rem black;
+    text-align: center;
+    margin: auto;    
+}
+
+.botão_inicio:active {
+    transform: translate(0, .3rem);
+    box-shadow: none;
+}
+
+.botão_reinicia{
+    width: 5rem;
+    height: 2rem;    
+    border-radius: .3rem;
+    box-shadow: 0 .2rem .3rem black;   
+    text-align: center;
+}
+
+.botão_reinicia:active{
+    transform: translate(0, .3rem);
+    box-shadow: none;
+}
+
+footer {    
+    margin-top: 20px;
+    text-decoration: black;
+    text-align:center;    
+}
